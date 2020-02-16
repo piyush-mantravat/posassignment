@@ -1,0 +1,172 @@
+[{
+        "id": 0,
+        "name": "comuter",
+        "price": 130,
+        "category": "computers",
+        "description": "accessoire , computer",
+        "image": "clothing.jpg",
+        "quant": 1
+    },
+    {
+        "id": 1,
+        "name": "sweater",
+        "price": 1,
+        "category": "Clothing",
+        "description": "fashion, clothes , sweater, wool, cardigan,…",
+        "image": "clothing.jpg",
+        "quant": 1
+    },
+    {
+        "id": 2,
+        "name": "tie",
+        "price": 46,
+        "category": "Clothing",
+        "description": "fashion, tie, clothes, accessory , accessoire,…",
+        "image": "tie.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 3,
+        "name": "jacket",
+        "price": 190,
+        "category": "Clothing",
+        "description": "winter  jacket ",
+        "image": "jacket.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 4,
+        "name": "jacket men",
+        "price": 225,
+        "category": "Clothing",
+        "description": "fashion  man  jacket ",
+        "image": "jacket_men.jpg",
+        "quant": 1
+    },
+    {
+        "id": 5,
+        "name": "grapes",
+        "price": 18,
+        "category": "fruits",
+        "description": "food ,  leaf,  grape,s  wet,  green",
+        "image": "grapes.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 6,
+        "name": "strawberries",
+        "price": 15,
+        "category": "fruits",
+        "description": "healthy  red sweet  strawberries",
+        "image": "strawberries.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 7,
+        "name": "kiwi",
+        "price": 50,
+        "category": "fruits",
+        "description": "fruit  kiwi ",
+        "image": "kiwi.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 8,
+        "name": "mouse",
+        "price": 80,
+        "category": "computers",
+        "description": "apple   mouse",
+        "image": "mouse.jpg",
+        "quant": 1
+    },
+    {
+        "id": 9,
+        "name": "keyboard",
+        "price": 80,
+        "category": "computers",
+        "description": "apple mac  keyboard",
+        "image": "keyboard.jpg",
+        "quant": 1
+    },
+    {
+        "id": 10,
+        "name": "headphone",
+        "price": 120,
+        "category": "computers",
+        "description": "music headphone",
+        "image": "headphone.jpg",
+        "quant": 1
+    },
+    {
+        "id": 11,
+        "name": "motherboard",
+        "price": 179,
+        "category": "computers",
+        "description": "pc motherboard with 16 Gb RAM",
+        "image": "motherboard.jpg",
+        "quant": 1
+    },
+    {
+        "id": 12,
+        "name": "notebook",
+        "price": 760,
+        "category": "computers",
+        "description": "macbook  notebook  computer",
+        "image": "notebook.jpg",
+        "quant": 1
+    },
+    {
+        "id": 13,
+        "name": "computer repair",
+        "price": 350,
+        "category": "services",
+        "description": "standard computer repairing",
+        "image": "computer_repair.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 14,
+        "name": "gift folding",
+        "price": 7,
+        "category": "services",
+        "description": "standard computer repairing",
+        "image": "gift_folding.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 15,
+        "name": "Clothing",
+        "price": 100,
+        "category": "Clothing",
+        "description": "standard computer repairing",
+        "image": "clothing.jpg",
+        "quant": 1
+    },
+    {
+        "id": 16,
+        "name": "nivea pocket",
+        "price": 7,
+        "category": "services",
+        "description": "standard computer repairing",
+        "image": "tie.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 17,
+        "name": "nivea pocket bleu",
+        "price": 8,
+        "category": "Catégorie",
+        "description": "standard computer repairing",
+        "image": "tie.jpeg",
+        "quant": 1
+    },
+    {
+        "id": 18,
+        "name": "chilli hot pizza",
+        "price": 200,
+        "category": "pizza",
+        "description": "standard computer repairing",
+        "image": "clothing.jpg",
+        "quant": 1
+    }
+]

@@ -1,0 +1,70 @@
+<h1 mat-dialog-title>Hi sale No .. 00021</h1>
+<h1 mat-dialog-title>{{date}}</h1>
+<div mat-dialog-content>
+  <section>
+    <div class="col">
+        <div class="">
+            <div class="">
+                <table class="table">
+                    <thead class="flex">
+                        <tr>
+                            <th class="th-1">#</th>
+                            <th class="th-1">Products</th>
+                            <th class="th-1">Quantity</th>
+                            <th class="th-2">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of saleItemAllData; let i = index">
+                            <div *ngIf="data.quant >=1" class="bx">
+                                <td class="td-1">
+                                    {{i+1}}
+                                </td>
+                                <td class="td-1">
+                                    {{data.name}}
+                                </td>
+                                <td class="td-1">
+                                    {{data.quant}}
+                                </td>
+                                <td class="td-1">
+                                    {{data.quant*data.price}}
+                                </td>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-total">
+                <table class="table">
+                    <tbody>
+                        <tr> 
+                            <td>Total Items</td>
+                            <td>{{itemPrice.totalItem}}</td>
+                            <td> SubTotal </td>
+                            <td>{{itemPrice.itemTotalprice}}</td>
+                        </tr>
+                        <tr >
+                          <td>Discount</td>
+                          <td>
+                              <span>10%</span>
+                              <!-- <span class="right">{{totalVatDiscountPrice*(10/100)}}EUR</span> -->
+                          </td>
+                      </tr>
+                        <tr>
+                            <td>VAT tax</td>
+                            <td>
+                                <span>10%</span>
+                                <!-- <span class="right">{{allitemprice*(10/100)}} EUR</span> -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">close</button>
+</div>

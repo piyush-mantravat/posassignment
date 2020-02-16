@@ -1,0 +1,74 @@
+<section>
+    <div class="col">
+        <div class="cart">
+            <div class="cart-body">
+                <table class="table">
+                    <thead class="flex">
+                        <tr>
+                            <th class="th-1">Products</th>
+                            <th class="th-1">Price</th>
+                            <th class="th-1">Quantity</th>
+                            <th class="th-2">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngIf="cartData==undefined || cartData==''">
+                            <td class="text-center" colspan="4"> THERE ARE NO PRODUCTS</td>
+                        </tr>
+                        <tr *ngFor="let data of cartData; let i = index">
+                            <div *ngIf="data.quant >=1" class="bx">
+                                <td class="td-1">
+                                    {{data.name}}
+                                </td>
+                                <td class="td-1">
+                                    {{data.price}}
+                                </td>
+                                <td class="td-1">
+                                    <button class="btn" type="button" (click)="decrement(data,i)">-</button>{{data.quant}}<button class="btn" type="button" (click)="increment(data,i)">+</button>
+                                </td>
+                                <td class="td-1">
+                                    {{data.quant*data.price}}
+                                </td>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-total">
+                <table class="table">
+                    <tbody>
+                        <tr> 
+                            <td>SubTotal</td>
+                            <td>
+                                <span>{{allitemprice}} EUR</span>
+                                <span class="right">{{item}} items</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>VAT tax</td>
+                            <td>
+                                <span>10%</span>
+                                <span class="right">{{allitemprice*(10/100)}} EUR</span>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>Discount</td>
+                            <td>
+                                <span>10%</span>
+                                <span class="right">{{totalVatDiscountPrice*(10/100)}}EUR</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td class="clr-dark">
+                                {{totalPrice}} EUR
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn-cancel">Cancel Sale</button>
+                <button type="button" class="btn-process" (click)="opensaleItemDialog()">Process Sale</button>
+            </div>
+        </div>
+    </div>
+</section>

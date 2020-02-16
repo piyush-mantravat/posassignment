@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <app-card [cartData]="arr"></app-card>
+        <section>
+            <div class="col">
+                <div class="dashboard">
+                    <div class="row">
+                        <div class="img-box" *ngFor="let product of productData; let i = index">
+                            <div class="box" (click)="sendData(product,i)">
+                                <img src="{{url}}{{product.image}}" alt="..">
+                                <div class="overlay-{{i}}">
+                                    <div class="text-1">{{product.name}}</div>
+                                </div>
+                                <div class="overlays-{{i}}">
+                                    <div class="text">
+                                        <h4>{{product.name}}</h4>
+                                        <h6>{{product.price}} EUR</h6>
+                                        <h6>{{product.description}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="img-box">
+                            <div class="box">
+                                <img src="./../../../assets/images/computer_repair.jpeg" alt="..">
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="box">
+                                <img src="./../../../assets/images/comuter.jpg" alt="..">
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="box">
+                                <img src="./../../../assets/images/gift_folding.jpeg" alt="..">
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="box">
+                                <img src="./../../../assets/images/grapes.jpeg" alt="..">
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="box">
+                                <img src="./../../../assets/images/headphone.jpg" alt="..">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
